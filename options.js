@@ -6,6 +6,7 @@ $(function(){
 	var notify_token = $("#notify_token").val();
 	var options = {notify_token: notify_token };
 	chrome.storage.sync.set(options, function(){});
+	window.close();
     });
 
     // set notify_token from sync storage to text area.
